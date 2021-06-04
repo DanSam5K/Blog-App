@@ -1,1 +1,19 @@
-<h1 class="title">Blog Index<h1>
+<% content_for :page_title, "Blog Post" %>
+
+
+<section class="section">
+    <div class="container-md my-5">
+       <% @posts.each do |post| %>
+        <div class="row">
+            <div class="card border-light mb-3 col-12 col-md-6 col-xl-4">
+                <div class="card-header" style="background-color: #e3f2fd;">Author Name</div>
+                <div class="card-body py-4">
+                    <h5 class="card-title text-uppercase"> <%= link_to post.title, post %> </h5>
+                    <p class="card-text py-2"> <%= post.content %> </p>
+                    <a href="#" class="btn btn-primary mt-2">SEE MORE</a>
+                </div>
+            </div>
+        </div>
+        <% end %>
+    </div>
+</section>

@@ -1,10 +1,12 @@
+<% content_for :page_title, @post.title %>
+
 <section>
- <div>
-   <h1 class="title">
-    <%= @post.title %>
-   </h1>
+ <div class="container">
    <div class="content">
-    <%= @post.title %>
+    <%= @post.content %>
    </div>
  </div>
+ <%= link_to "Create New Post", new_post_path, class:"nav-link" %>
 </section>
+
+

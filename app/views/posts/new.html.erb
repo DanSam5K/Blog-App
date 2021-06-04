@@ -1,19 +1,18 @@
-<h1>New Article</h1>
-
+<% content_for :page_title, "Create New Post" %>
 <%= form_with model: @post do |form| %>
   <div>
     <%= form.label :title %><br>
     <%= form.text_field :title %>
     <% @post.errors.full_messages_for(:title).each do |message| %>
-      <div><%= message %></div>
+      <div> <%= message %> </div>
     <% end %>
   </div>
 
   <div>
-    <%= form.label :body %><br>
-    <%= form.text_area :body %><br>
-    <% @post.errors.full_messages_for(:body).each do |message| %>
-      <div><%= message %></div>
+    <%= form.label :content %> <br>
+    <%= form.text_area :content %> <br>
+    <% @post.errors.full_messages_for(:content).each do |message| %>
+      <div> <%= message %> </div>
     <% end %>
   </div>
 
