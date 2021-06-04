@@ -1,12 +1,31 @@
 <% content_for :page_title, @post.title %>
 
-<section>
- <div class="container">
-   <div class="content">
-    <%= @post.content %>
+<section class="section">
+ <%= link_to "Create New Post", new_post_path, class: "nav-link" %>
+ <nav class="level">
+   <div>
+     <p>
+      <strong>Actions</strong>
+     </p>
    </div>
- </div>
- <%= link_to "Create New Post", new_post_path, class:"nav-link" %>
+
+   <div>
+     <p>
+      <%= link_to "Edit", edit_post_path(@post), class: "button" %>
+     </p>
+     
+      <!-- Todofunctionality-->
+     <p>
+      <a class="button primary-danger">Delete</a>
+     </p>
+  
+   </div>
+ </nav>
+ <hr>
+  <div class="content">
+    <%= @post.content %>
+  </div>
 </section>
+<section class="comments"></section>
 
 
