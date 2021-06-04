@@ -1,0 +1,30 @@
+<% content_for :page_title, @post.title %>
+
+<section class="section">
+ <%= link_to "Create New Post", new_post_path, class: "nav-link" %>
+ <nav class="level">
+   <div>
+     <p>
+      <strong>Actions</strong>
+     </p>
+   </div>
+
+   <div>
+     <p>
+      <%= link_to "Edit", edit_post_path(@post), class: "btn btn-light" %>
+     </p>
+
+     <p>
+     <%= link_to "Delete", post_path(@post), method: :delete, data: { confirm: "Are you sure?" }, class: "btn btn-danger" %>
+     </p>
+  
+   </div>
+ </nav>
+ <hr>
+  <div class="content">
+    <%= @post.content %>
+  </div>
+</section>
+<section class="comments"></section>
+
+
