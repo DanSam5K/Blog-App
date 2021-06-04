@@ -19,12 +19,39 @@
 * Bootstrap and SASS
 * Node.js
 
-##
 
-* How to run the test suite
+## Authors
 
-* Services (job queues, cache servers, search engines, etc.)
+👤 **Daniel Samuel**
 
-* Deployment instructions
+- GitHub: [@DanSam5K](https://github.com/DanSam5K)
+- Twitter: [@_dan_sam](https://twitter.com/_dan_sam)
+- LinkedIn: [DanSam](https://www.linkedin.com/in/dansamuel/)
 
-* ...
+👤 **Dante Alonso**
+
+- GitHub: [@DanteAlonsHT](https://github.com/DanteAlonsoHT)
+- Twitter: [@dante_dante1](https://twitter.com/dante_dante1)
+- LinkedIn: [DanteHandandez](https://www.linkedin.com/in/dante-hernandez99/)
+
+## 🤝 Contributing
+
+- If you want to contribute or have a feature to add.
+- Go to the repo
+- Open a pull request
+or
+- Feel free with a click [issues page](https://github.com/DanSam5K/Blog-App/issues).
+
+Contributions, issues and feature requests are welcome!
+
+## Show Your Support
+Give a ⭐️ if you like this project!
+
+## Acknowledgments
+
+- Project inspired by Microverse Program
+
+## 📝 License
+
+This project is [MIT](https://mit-license.org/) licensed.
+
