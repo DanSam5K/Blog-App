@@ -4,6 +4,9 @@
 
 - In this project, got the opportunity to actually build a real Rails application. It’s not a trivially simple one either. An Interesting project that enable us harness all the power and beauty of Rails on Ruby to build a blog that enable users perform CRUD actions with blog post and other users can comments with options to also perform certain actions
 
+![Home screenshot](lib/assets/homepage.png) ![Create post screenshot](lib/assets/createpost.png) ![Action page screenshot](lib/assets/deleteditpost.png)
+
+
 ## Objectives
 - First project build with Ruby on Rails. The main goal here is to make it up and running
 - Undertand Bascis of CRUD operations
@@ -18,7 +21,34 @@
 * Gem dependency plugins
 * Bootstrap and SASS
 * Node.js
+* Heroku
 
+## Installations 
+- Make sure you have ruby installed if not? click [here](https://www.rubyguides.com/ruby-tutorial/)
+- You click [here](https://www.theodinproject.com/paths/full-stack-ruby-on-rails/courses/ruby-on-rails/lessons/your-first-rails-application-ruby-on-rails) to Install rails in your local machine Visit [Getting Started with Rails](https://guides.rubyonrails.org/getting_started.html) for better understanding on how the project works
+
+## Getting Started
+- Local copy of project can obtain by cloning into any folder from local machine with these few steps:
+**Step 1**
+```
+~$ git clone https://github.com/DanSam5K/Blog-App.git
+```
+**Step 2**
+```
+~$ cd Blog-App
+```
+**Step 3**
+```
+~$ cd Blog-App
+```
+**Step 3**
+```
+~$ bundle install
+``` 
+**Step 3 run**
+```
+~$ rails server
+``` 
 
 ## Authors
 
