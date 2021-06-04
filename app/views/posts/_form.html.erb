@@ -1,21 +1,25 @@
+<div class="container">
+
 <%= form_with model: @post do |form| %>
-    <div>
-      <%= form.label :title %><br>
-      <%= form.text_field :title %>
+
+      <div class="form-floating mb-3 py-2">
+      
+      <%= form.text_field :title, class: "form-control p-3", id: "floatingInput", placeholder: "Title" %>
+      <%= form.label :title, for: "floatingInput" %><br>
       <% @post.errors.full_messages_for(:title).each do |message| %>
         <div> <%= message %> </div>
-      <% end %>
-    </div>
+          <% end %>
+        </div>
   
-    <div>
-      <%= form.label :content %> <br>
-      <%= form.text_area :content %> <br>
-      <% @post.errors.full_messages_for(:content).each do |message| %>
-        <div> <%= message %> </div>
-      <% end %>
-    </div>
-  
-    <div>
-      <%= form.submit %>
-    </div>
+      <div class="form-floating mb-3 py-2">
+        <%= form.text_area :content, class: "form-control p-4", id: "floatingTextarea", placeholder: "Content" %> <br>
+        <%= form.label :content , for: "floatingTextarea" %> <br>
+        <% @post.errors.full_messages_for(:content).each do |message| %>
+          <div> <%= message %> </div>
+        <% end %>
+      </div>
+
+      <%= form.submit class: "btn btn-outline-success w-50 mx-auto d-block" %>
   <% end %>
+
+</div>

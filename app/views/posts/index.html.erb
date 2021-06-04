@@ -1,19 +1,19 @@
-<% content_for :page_title, "Blog Post" %>
+<h1 class="text-center fs-2 py-5 text-muted"> Blog Posts </h1>
 
 
 <section class="section">
     <div class="container-md my-5">
-       <% @posts.each do |post| %>
         <div class="row">
-            <div class="card border-light mb-3 col-12 col-md-6 col-xl-4">
-                <div class="card-header" style="background-color: #e3f2fd;">Author Name</div>
-                <div class="card-body py-4">
-                    <h5 class="card-title text-uppercase"> <%= link_to post.title, post %> </h5>
-                    <p class="card-text py-2"> <%= post.content %> </p>
-                    <a href="#" class="btn btn-primary mt-2">SEE MORE</a>
+            <% @posts.each do |post| %>
+                <div class="card border-light mb-3 col-12 col-md-6 col-xl-4">
+                    <div class="card-header" style="background-color: #e3f2fd;">Author Name</div>
+                    <div class="card-body py-4">
+                        <h5 class="card-title text-uppercase"> <%= link_to post.title, post %> </h5>
+                        <p class="card-text py-2"> <%= post.content %> </p>
+                        <%= link_to "SEE MORE", post, class: "btn btn-outline-info text-uppercase fw-bolder fs-6" %>
+                    </div>
                 </div>
-            </div>
+            <% end %>
         </div>
-        <% end %>
     </div>
 </section>
