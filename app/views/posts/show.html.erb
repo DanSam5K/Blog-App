@@ -11,12 +11,11 @@
 
    <div>
      <p>
-      <%= link_to "Edit", edit_post_path(@post), class: "button" %>
+      <%= link_to "Edit", edit_post_path(@post), class: "btn btn-light" %>
      </p>
-     
-      <!-- Todofunctionality-->
+
      <p>
-      <a class="button primary-danger">Delete</a>
+      <%= link_to "Delete", root_path(@post), method: :delete, data: { confirm: "Are you sure? " }, class: "btn btn-danger" %>
      </p>
   
    </div>
