@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
-  root 'home#index'
-  resources :blog
+  root "home#index"
+  resources :posts
+
+  get '/home', to: 'home#index'
+  get '/posts', to: 'posts#index'
 end
